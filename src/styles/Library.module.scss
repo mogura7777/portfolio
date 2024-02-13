@@ -1,0 +1,45 @@
+/** @format */
+
+.container {
+  @media (width <= 480px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.preview {
+  width: 300px;
+  height: 300px;
+  min-width: 300px;
+  background-color: #eee;
+  overflow: hidden;
+}
+@media (width <= 480px) {
+  .preview {
+    min-width: 100%;
+  }
+}
+.preview__img {
+  width: 100%;
+  object-fit: cover;
+}
+.btn_box {
+  display: flex;
+  margin: 0 0 30px;
+  button {
+    margin: 0 10px 0 0;
+  }
+}
+.box {
+  display: flex;
+  @media (width <= 480px) {
+    display: block;
+  }
+}
+.boxin {
+  margin: 0 20px 0 0;
+  @media (width <= 480px) {
+    margin: 0 0 20px;
+  }
+}
