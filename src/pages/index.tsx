@@ -38,8 +38,9 @@ const Home: NextPage = () => {
           </div>
           <div>
             <h2>Masashi</h2>
+            <p className="txt">フロントエンドを担当。</p>
             <p className="txt">
-              休日の過ごし方は、ジムでウォーキングしながら読書しています。
+              休日はジムでウォーキングしながら読書しています。
               <br />
               午後は娘と公園で遊んで、銭湯に行くのがお決まりのコースです。
             </p>
@@ -56,8 +57,8 @@ const Home: NextPage = () => {
             <li className="timeline__box">
               <p className="timeline-date">幼少期</p>
               <div className="timeline-content">
-                <h3>兵庫県の自然に囲まれて育ちました。</h3>
-                <p>山や川で昆虫や魚を探索する日々。</p>
+                <h3>田舎の自然に囲まれて育ちました。</h3>
+                <p>山や川で昆虫や魚を探索。</p>
               </div>
             </li>
             <li>
@@ -75,9 +76,10 @@ const Home: NextPage = () => {
                 <p>
                   野球に入部。
                   <br />
-                  体育大学あがりのパワフルな監督に精神と肉体を鍛えられる。
+                  体育大学あがりの監督に精神と肉体を鍛えられる。
                   <br />
-                  引退試合後は、陸上部が部員不足のため助っ人として入部。
+                  <br />
+                  引退試合後は、陸上部の助っ人として入部。
                   <br />
                   夏休みは、毎日10キロほど山道を走り込みの日々。
                 </p>
@@ -90,7 +92,8 @@ const Home: NextPage = () => {
                 <p>
                   中学校の野球の猛練習の経験が活かされ、団体メンバーに選ばれて県大会に出場。
                   <br />
-                  この頃、美術部の先生がとてもカッコいい方で、その影響を受けて美大を目指すことに。
+                  <br />
+                  美術部の先生に影響を受けて美大を目指すことに。
                   <br />
                   高校2年の終わり頃に画塾に通い出す。
                 </p>
@@ -104,32 +107,30 @@ const Home: NextPage = () => {
                   <br />
                   主にアナログのイラストを描いていました。
                   <br />
-                  大学の講義終わりに生活費を稼ぐためほぼバイトの日々。
                   <br />
-                  この頃に、ブレイクダンスをはじめる。
+                  生活費を稼ぐためバイトの日々。
                   <br />
-                  卒業目前にしてウィンドミルを習得。
+                  ブレイクダンスをはじめる。卒業目前にしてウィンドミルを習得。
+                </p>
+                <p>
+                  無事、大学卒業するも就活をしなかったため、近所のCDショップでアルバイト。
+                  <br />
+                  お客さんが来ないので朝から晩までポップ作成の日々。
                 </p>
               </div>
             </li>
             <li>
               <p className="timeline-date">職業訓練校</p>
               <div className="timeline-content">
-                <p>
-                  ホームページの基礎を学ぶ。
-                  <br />
-                  大阪市の高度総合事務センター事業でWeb制作を経験する。
-                  <br />
-                  未経験でHP制作やデザインに携わることが出来て貴重な体験でした。
-                </p>
+                <p>ホームページの基礎を学ぶ。</p>
               </div>
             </li>
             <li>
               <p className="timeline-date">社会人</p>
               <div className="timeline-content">
-                <h3>大阪のWEB制作会社に就職。</h3>
+                <h3>WEB制作会社に就職。</h3>
                 <p>
-                  コーディングやCMSの構築、アクセス解析、デレクションなどの業務を経験しました。
+                  コーディングやCMSの構築、アクセス解析、デレクションなどの業務を経験。
                   <br />
                 </p>
               </div>
@@ -137,9 +138,7 @@ const Home: NextPage = () => {
             <li>
               <p className="timeline-date">現在</p>
               <div className="timeline-content">
-                <h3>
-                  現在は、自社開発アプリケーションのUI設計/フロントエンドを担当しています。
-                </h3>
+                <h3>自社開発アプリケーションのUI設計/フロントエンドを担当。</h3>
                 <p className="txt02">
                   今後は、バックエンドの知識も広げて行く予定です。
                 </p>
@@ -156,20 +155,11 @@ const Home: NextPage = () => {
       <div className="Skill__body">
         <ScrollRevealContainer move="left">
           <ul className="list">
-            <li>普通自動二輪・普通自動車免許</li>
             <li>HTML5プロフェッショナル認定試験 レベル1 取得</li>
             <li>HTML5プロフェッショナル認定試験 レベル2 取得</li>
-            <li>Google 広告「検索広告」</li>
-            <li>Google 広告ディスプレイ</li>
           </ul>
         </ScrollRevealContainer>
       </div>
-
-      <h1 className="ttl">
-        Illustration<span className="ttl__read">イラストレーション</span>
-      </h1>
-
-      <Carousel linkList={linkList}></Carousel>
     </div>
   );
 };
