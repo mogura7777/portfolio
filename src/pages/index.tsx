@@ -1,23 +1,13 @@
 /** @format */
 
 import type { NextPage } from "next";
-import { useState } from "react";
 import { MyImage } from "src/components/Atoms/Image";
-import { Carousel } from "src/components/Molecules/Carousel";
 import dynamic from "next/dynamic";
 const ScrollRevealContainer = dynamic(
   () => import("src/components/Molecules/ScrollRevealContainer"),
   { ssr: false }
 );
 const Home: NextPage = () => {
-  const [linkList] = useState([
-    "./img/006.jpg",
-    "./img/002.jpg",
-    "./img/003.jpg",
-    "./img/004.jpg",
-    "./img/001.png",
-    "./img/005.jpg",
-  ]);
   return (
     <div>
       <div className="About__body">
@@ -25,7 +15,7 @@ const Home: NextPage = () => {
         <p className="About__body_txt">
           Next.js、TypeScriptを使用して作成しています。
           <br />
-          今後は、技術ブログとして活用する予定です。
+          今後は、技術ブログとして活用する予定。
         </p>
       </div>
       <h1 className="ttl">
@@ -37,8 +27,8 @@ const Home: NextPage = () => {
             <MyImage fname="../img/001.png" size={400} />
           </div>
           <div>
-            <h2>Masashi</h2>
-            <p className="txt">フロントエンドを担当。</p>
+            <h2>Masashi.K</h2>
+            <p className="txt">主にフロントエンドを担当。</p>
             <p className="txt">
               休日はジムでウォーキングしながら読書しています。
               <br />
@@ -64,17 +54,15 @@ const Home: NextPage = () => {
             <li>
               <p className="timeline-date">小学生時代</p>
               <div className="timeline-content">
-                <h3>兄の影響で地元の野球チームに入部。</h3>
-                <p>
-                  小学校の高学年でジャッキー・チェンに憧れて、体操教室に通い始める。
-                </p>
+                <h3>友人のすすめで地元の野球チームに入る。</h3>
+                <p>ジャッキー・チェンに憧れて体操教室に通い始める。</p>
               </div>
             </li>
             <li>
               <p className="timeline-date">中学生時代</p>
               <div className="timeline-content">
                 <p>
-                  野球に入部。
+                  引き続き、野球に入部。
                   <br />
                   体育大学あがりの監督に精神と肉体を鍛えられる。
                   <br />
@@ -105,7 +93,7 @@ const Home: NextPage = () => {
                 <p>
                   美術大学でイラスト科を専攻。
                   <br />
-                  主にアナログのイラストを描いていました。
+                  アナログのイラストを描いていました。
                   <br />
                   <br />
                   生活費を稼ぐためバイトの日々。
@@ -138,10 +126,7 @@ const Home: NextPage = () => {
             <li>
               <p className="timeline-date">現在</p>
               <div className="timeline-content">
-                <h3>自社開発アプリケーションのUI設計/フロントエンドを担当。</h3>
-                <p className="txt02">
-                  今後は、バックエンドの知識も広げて行く予定です。
-                </p>
+                <h3>自社開発アプリケーションのフロントエンドを担当。</h3>
               </div>
             </li>
           </ul>
